@@ -42,23 +42,7 @@ $(document).ready(function() {
         });
       }
     }
-  
-    // ========================================================================= //
-    //  //NAVBAR SHOW - HIDE
-    // ========================================================================= //
-  
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll > 200) {
-        $("#main-nav, #main-nav-subpage").slideDown(700);
-        $("#main-nav-subpage").removeClass('subpage-nav');
-      } else {
-        $("#main-nav").slideUp(700);
-        $("#main-nav-subpage").hide();
-        $("#main-nav-subpage").addClass('subpage-nav');
-      }
-    });
-  
+    
     // ========================================================================= //
     //  // RESPONSIVE MENU
     // ========================================================================= //
@@ -80,7 +64,7 @@ $(document).ready(function() {
   
       typed.typed({
         strings: strings,
-        typeSpeed: 100,
+        typeSpeed: 150,
         loop: true,
       });
     });
@@ -134,7 +118,12 @@ $(document).ready(function() {
       $('.venobox').venobox();
     });
   });
-/* Back to top Icon */
+
+
+  // ========================================================================= //
+  //  Back to top Icon 
+  // ========================================================================= //
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
